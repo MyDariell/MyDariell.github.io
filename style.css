@@ -6,13 +6,14 @@
 }
 
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --text-color: #1f2937;
-    --light-text: #6b7280;
-    --bg-color: #ffffff;
-    --light-bg: #f9fafb;
-    --border-color: #e5e7eb;
+    --primary-color: #a99985;      /* Khaki Beige - main accent */
+    --secondary-color: #70798c;    /* Slate Grey - secondary accent */
+    --text-color: #252323;         /* Shadow Grey - main text */
+    --light-text: #70798c;         /* Slate Grey - secondary text */
+    --bg-color: #f5f1ed;           /* Parchment - background */
+    --light-bg: #dad2bc;           /* Bone - alternate background */
+    --border-color: #dad2bc;       /* Bone - borders */
+    --dark-accent: #252323;        /* Shadow Grey - dark elements */
 }
 
 body {
@@ -69,8 +70,8 @@ nav .container {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #252323 0%, #70798c 40%, #a99985 100%);
+    color: #f5f1ed;
     padding: 100px 0;
     text-align: center;
 }
@@ -81,7 +82,8 @@ nav .container {
 }
 
 .hero .highlight {
-    color: #fbbf24;
+    color: #dad2bc;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .subtitle {
@@ -98,18 +100,19 @@ nav .container {
 
 .cta-button {
     display: inline-block;
-    background-color: white;
-    color: var(--primary-color);
+    background-color: #dad2bc;
+    color: #252323;
     padding: 12px 30px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #a99985;
 }
 
 /* Section Styles */
@@ -261,8 +264,8 @@ section {
 
 /* Footer */
 footer {
-    background-color: var(--text-color);
-    color: white;
+    background-color: var(--dark-accent);
+    color: #f5f1ed;
     text-align: center;
     padding: 2rem 0;
 }
